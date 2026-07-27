@@ -22,7 +22,7 @@ public class ChecksumCalculator {
 
             byte[] buffer = new byte[1024];
             while (dis.read(buffer) != -1) {
-                // Stream read hone par SHA-256 hash automatically update hota hai
+                
             }
         }
 
