@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 public class FileScanner {
     private static final Logger logger = LoggerFactory.getLogger(FileScanner.class);
 
-    // Pattern matcher for filenames like: V1__create_users_table.sql
+    
     private static final Pattern MIGRATION_FILE_PATTERN = Pattern.compile("^V(\\d+)__([a-zA-Z0-9_]+)\\.sql$");
 
     public List<MigrationScript> scanMigrationFiles(String locationPath) {
@@ -51,7 +51,7 @@ public class FileScanner {
             }
         }
 
-        // Automatic version sorting (V1 -> V2 -> V3)
+     
         Collections.sort(scripts);
         logger.info("Discovered {} valid migration script(s).", scripts.size());
 
