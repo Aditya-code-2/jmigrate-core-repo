@@ -29,3 +29,4 @@ Add both repository and dependency into your `pom.xml`:
 ### License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
